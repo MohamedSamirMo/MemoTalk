@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+android:orientation="vertical"
+    android:background="@drawable/pack"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myUserIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi User ID \n Welcome \n ,do you want to join a call!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/targetUserId"
+        android:layout_marginVertical="30dp"
+        android:hint="Enter Target User ID / Name"
+        android:background="@drawable/edittext_border"
+        android:layout_marginHorizontal="20dp"
+        android:padding="20dp"
+        android:inputType="textPersonName"
+        android:autofillHints=""
+        android:maxLines="1"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textSize="20sp"
+        />
+
+
+    <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/voiceCallButton"
+        android:layout_marginTop="24dp"
+        />
+</LinearLayout>
